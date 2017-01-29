@@ -38,7 +38,7 @@ abstract class EnumTestCase extends TestCase
      */
     public function setUp()
     {
-        $this->enum = new $this->enumClass;
+        $this->enum = new $this->enumClass();
     }
 
     /**

@@ -43,6 +43,8 @@ class ApiTest extends TestCase
         $exceptionOccurred = false;
         try {
             new Api($config);
+        } catch (\Throwable $t) {
+            $exceptionOccurred = true;
         } catch (\Exception $e) {
             $exceptionOccurred = true;
         }
