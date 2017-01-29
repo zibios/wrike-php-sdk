@@ -27,6 +27,9 @@ Wrike PHP SDK
 **VersionEye**
 [![Dependency Status](https://www.versioneye.com/user/projects/588e6de35715cf00490345f5/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/588e6de35715cf00490345f5)
 
+**Travis**
+[![Build Status](https://travis-ci.org/zibios/wrike-php-sdk.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-sdk)
+
 **ToDo before v0.1.0 version**
 - [ ] Connect to external services (packagist, travis, scrutinizer, ...)
 - [ ] Establishing some common rules for all external services
