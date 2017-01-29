@@ -256,10 +256,6 @@ abstract class ResourceAbstract implements ResourceInterface
                 }
                 break;
             case RequestMethodEnum::PUT:
-                if (count($params) > 0) {
-                    $options['body'] = $this->getConfig()->getSerializer()->serialize($params, 'json');
-                }
-                break;
             case RequestMethodEnum::POST:
                 if (count($params) > 0) {
                     $options['body'] = $this->getConfig()->getSerializer()->serialize($params, 'json');
