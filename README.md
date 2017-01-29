@@ -5,12 +5,16 @@ Wrike PHP SDK
 
 **First usable version around 2017-03-01**
 
-[![Packagist](https://img.shields.io/packagist/v/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
-[![Packagist](https://img.shields.io/packagist/vpre/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
-[![Packagist](https://img.shields.io/packagist/dt/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
-[![Packagist](https://img.shields.io/packagist/dm/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
-[![Packagist](https://img.shields.io/packagist/dd/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+**Packagist**
+[![Packagist License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist Version](https://img.shields.io/packagist/v/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 
+**Github** 
+[![Github License](https://img.shields.io/github/license/zibios/wrike-php-sdk.svg)](https://github.com/zibios/wrike-php-sdk/blob/master/LICENSE)
+[![Github Downloads](https://img.shields.io/github/downloads/zibios/wrike-php-sdk/total.svg)](https://github.com/zibios/wrike-php-sdk)
+[![Github Tag](https://img.shields.io/github/tag/zibios/wrike-php-sdk.svg)](https://github.com/zibios/wrike-php-sdk)
+[![Github Release](https://img.shields.io/github/release/zibios/wrike-php-sdk.svg)](https://github.com/zibios/wrike-php-sdk)
 
 
 **ToDo before v0.1.0 version**
