@@ -5,6 +5,14 @@ Wrike PHP SDK
 
 **First usable version around 2017-03-01**
 
+[![Packagist](https://img.shields.io/packagist/v/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist](https://img.shields.io/packagist/vpre/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist](https://img.shields.io/packagist/dt/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist](https://img.shields.io/packagist/dm/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist](https://img.shields.io/packagist/dd/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+
+
+
 **ToDo before v0.1.0 version**
 - [ ] Connect to external services (packagist, travis, scrutinizer, ...)
 - [ ] Establishing some common rules for all external services
