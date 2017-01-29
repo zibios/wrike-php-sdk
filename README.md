@@ -16,6 +16,11 @@ Wrike PHP SDK
 [![Github Tag](https://img.shields.io/github/tag/zibios/wrike-php-sdk.svg)](https://github.com/zibios/wrike-php-sdk)
 [![Github Release](https://img.shields.io/github/release/zibios/wrike-php-sdk.svg)](https://github.com/zibios/wrike-php-sdk)
 
+**Scrutnizer**
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/build-status/master)
+[![Code Coverage](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=master)
+
 
 **ToDo before v0.1.0 version**
 - [ ] Connect to external services (packagist, travis, scrutinizer, ...)
