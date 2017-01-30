@@ -39,6 +39,10 @@ Wrike PHP SDK
 [![Codacy grade](https://img.shields.io/codacy/grade/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
 [![Codacy coverage](https://img.shields.io/codacy/coverage/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
 
+**Code Climate**
+[![Code Climate](https://codeclimate.com/github/zibios/wrike-php-sdk/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-php-sdk)
+[![Test Coverage](https://codeclimate.com/github/zibios/wrike-php-sdk/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-php-sdk/coverage)
+
 **Required for v0.1.0 version**
 - [ ] Connect to external services (packagist, travis, scrutinizer, ...)
 - [ ] Establishing some common rules for all external services
