@@ -31,7 +31,14 @@ Wrike PHP SDK
 **Travis**
 [![Build Status](https://travis-ci.org/zibios/wrike-php-sdk.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-sdk)
 
-**ToDo before v0.1.0 version**
+**SensioLabs Insight**
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/3dea766e-c7cc-4180-b611-8a3b103f334f.svg)]()
+
+**Codacy**
+[![Codacy grade](https://img.shields.io/codacy/grade/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
+[![Codacy coverage](https://img.shields.io/codacy/coverage/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
+
+**Required for v0.1.0 version**
 - [ ] Connect to external services (packagist, travis, scrutinizer, ...)
 - [ ] Establishing some common rules for all external services
 - [ ] Wrike OAuth 2.0 implementation
