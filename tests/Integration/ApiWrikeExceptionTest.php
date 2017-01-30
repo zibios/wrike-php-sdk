@@ -111,7 +111,7 @@ class ApiWrikeExceptionTest extends TestCase
 
         $e = null;
         $exceptionOccurred = false;
-        $exceptionClass = false;
+        $exceptionClass = '';
         try {
             $api->getContactResource()->getAll();
         } catch (\Exception $e) {

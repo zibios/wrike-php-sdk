@@ -100,18 +100,20 @@ abstract class EnumTestCase extends TestCase
         self::assertEquals($isValid, call_user_func([$this->enumClass, 'isValidKey'], $key));
         $e = null;
         $exceptionOccurred = false;
+        $exceptionClass = '';
         try {
             call_user_func([$this->enumClass, 'assertIsValidKey'], $key);
         } catch (\Exception $e) {
             $exceptionOccurred = true;
+            $exceptionClass = get_class($e);
         }
 
         if ($isValid === true) {
-            self::assertFalse($exceptionOccurred, sprintf('assertIsValidKey should not throw exception but "%s" exception occurred!', get_class($e)));
+            self::assertFalse($exceptionOccurred, sprintf('assertIsValidKey should not throw exception but "%s" exception occurred!', $exceptionClass));
         }
         if ($isValid === false) {
             self::assertTrue($exceptionOccurred, sprintf('assertIsValidKey should throw exception but exception not occurred!'));
-            self::assertInstanceOf(\InvalidArgumentException::class, $e, sprintf('assertIsValidKey should throw %s exception but %s exception occurred!', \InvalidArgumentException::class, get_class($e)));
+            self::assertInstanceOf(\InvalidArgumentException::class, $e, sprintf('assertIsValidKey should throw %s exception but %s exception occurred!', \InvalidArgumentException::class, $exceptionClass));
         }
     }
 
@@ -142,18 +144,20 @@ abstract class EnumTestCase extends TestCase
         self::assertEquals($isValid, call_user_func([$this->enumClass, 'isValidValue'], $value));
         $e = null;
         $exceptionOccurred = false;
+        $exceptionClass = '';
         try {
             call_user_func([$this->enumClass, 'assertIsValidValue'], $value);
         } catch (\Exception $e) {
             $exceptionOccurred = true;
+            $exceptionClass = get_class($e);
         }
 
         if ($isValid === true) {
-            self::assertFalse($exceptionOccurred, sprintf('assertIsValidValue should not throw exception but "%s" exception occurred!', get_class($e)));
+            self::assertFalse($exceptionOccurred, sprintf('assertIsValidValue should not throw exception but "%s" exception occurred!', $exceptionClass));
         }
         if ($isValid === false) {
             self::assertTrue($exceptionOccurred, sprintf('assertIsValidValue should throw exception but exception not occurred!'));
-            self::assertInstanceOf(\InvalidArgumentException::class, $e, sprintf('assertIsValidValue should throw %s exception but %s exception occurred!', \InvalidArgumentException::class, get_class($e)));
+            self::assertInstanceOf(\InvalidArgumentException::class, $e, sprintf('assertIsValidValue should throw %s exception but %s exception occurred!', \InvalidArgumentException::class, $exceptionClass));
         }
     }
 }
