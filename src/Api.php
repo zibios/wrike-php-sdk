@@ -53,7 +53,7 @@ class Api implements ApiInterface
      */
     public function __construct(ConfigInterface $config)
     {
-        $this->config = $config;
+        $this->setConfig($config);
     }
 
     /**

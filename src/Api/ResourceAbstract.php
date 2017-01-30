@@ -35,7 +35,7 @@ abstract class ResourceAbstract implements ResourceInterface
      */
     public function __construct(ConfigInterface $config)
     {
-        $this->config = $config;
+        $this->setConfig($config);
     }
 
     /**

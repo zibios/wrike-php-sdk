@@ -63,4 +63,20 @@ abstract class ResourceDocumentTestCase extends TestCase
             self::assertTrue(method_exists($this->document, $setter), sprintf('"%s" not exist for "%s"', $setter, $this->sourceClass));
         }
     }
+
+    /**
+     * Test properties methods
+     */
+    public function test_getSetMethods()
+    {
+        $testValue = 'testValue';
+
+        foreach ($this->properties as $propertyName) {
+            $getter = sprintf('get%s', ucwords($propertyName));
+            self::assertNull($this->document->{$getter}());
+            $setter = sprintf('set%s', ucwords($propertyName));
+            $this->document->{$setter}($testValue);
+            self::assertSame($testValue, $this->document->{$getter}());
+        }
+    }
 }

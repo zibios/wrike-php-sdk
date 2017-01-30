@@ -65,12 +65,40 @@ abstract class EnumTestCase extends TestCase
         self::assertSame(array_keys($enums), $keys);
     }
 
+    public function test_getKey()
+    {
+        /** @var array $enums */
+        $enums = call_user_func([$this->enumClass, 'toArray']);
+        /** @var array $values */
+        $values = call_user_func([$this->enumClass, 'getValues']);
+        self::assertInternalType('array', $values);
+        foreach ($values as $value) {
+            self::assertInternalType('string', $value);
+            $key = call_user_func([$this->enumClass, 'getKey'], $value);
+            self::assertSame($value, $enums[$key]);
+        }
+    }
+
     public function test_getValues()
     {
         $enums = call_user_func([$this->enumClass, 'toArray']);
         $values = call_user_func([$this->enumClass, 'getValues']);
         self::assertInternalType('array', $values);
         self::assertSame(array_values($enums), $values);
+    }
+
+    public function test_getValue()
+    {
+        /** @var array $enums */
+        $enums = call_user_func([$this->enumClass, 'toArray']);
+        /** @var array $keys */
+        $keys = call_user_func([$this->enumClass, 'getKeys']);
+        self::assertInternalType('array', $keys);
+        foreach ($keys as $key) {
+            self::assertInternalType('string', $key);
+            $value = call_user_func([$this->enumClass, 'getValue'], $key);
+            self::assertSame($value, $enums[$key]);
+        }
     }
 
     /**
@@ -95,7 +123,7 @@ abstract class EnumTestCase extends TestCase
      *
      * @dataProvider enumKeysProvider
      */
-    public function test_isValidKey_assertIsValidKey($key, $isValid)
+    public function test_assertIsValidKey($key, $isValid)
     {
         self::assertEquals($isValid, call_user_func([$this->enumClass, 'isValidKey'], $key));
         $e = null;
@@ -139,7 +167,7 @@ abstract class EnumTestCase extends TestCase
      *
      * @dataProvider enumValuesProvider
      */
-    public function test_isValidValue_assertIsValidValue($value, $isValid)
+    public function test_assertIsValidValue($value, $isValid)
     {
         self::assertEquals($isValid, call_user_func([$this->enumClass, 'isValidValue'], $value));
         $e = null;

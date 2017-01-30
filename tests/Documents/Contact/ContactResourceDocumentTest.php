@@ -36,6 +36,7 @@ class ContactResourceDocumentTest extends ResourceDocumentTestCase
         'timezone',
         'locale',
         'deleted',
+        'me',
         'memberIds',
         'metadata',
         'myTeam',

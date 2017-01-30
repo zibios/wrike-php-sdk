@@ -50,7 +50,7 @@ abstract class ResourceTestCase extends TestCase
     protected $sourceClass;
 
     /**
-     * @var ResourceInterface
+     * @var ResourceAbstract
      */
     protected $document;
 

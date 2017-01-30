@@ -48,7 +48,7 @@ abstract class ResponseDocumentTestCase extends TestCase
     /**
      * Test exception inheritance
      */
-    public function test_ResourceDocument_ExtendProperClasses()
+    public function test_ExtendProperClasses()
     {
         self::assertInstanceOf(ResponseDocumentAbstract::class, $this->document, sprintf('"%s" should extend "%s"', get_class($this->document), ResponseDocumentAbstract::class));
         self::assertInstanceOf(ResponseDocumentInterface::class, $this->document, sprintf('"%s" should extend "%s"', get_class($this->document), ResponseDocumentInterface::class));
@@ -64,6 +64,22 @@ abstract class ResponseDocumentTestCase extends TestCase
             self::assertTrue(method_exists($this->document, $getter), sprintf('"%s" not exist for "%s"', $getter, $this->sourceClass));
             $setter = sprintf('set%s', ucwords($propertyName));
             self::assertTrue(method_exists($this->document, $setter), sprintf('"%s" not exist for "%s"', $setter, $this->sourceClass));
+        }
+    }
+
+    /**
+     * Test properties methods
+     */
+    public function test_getSetMethods()
+    {
+        $testValue = 'testValue';
+
+        foreach ($this->properties as $propertyName) {
+            $getter = sprintf('get%s', ucwords($propertyName));
+            self::assertNull($this->document->{$getter}());
+            $setter = sprintf('set%s', ucwords($propertyName));
+            $this->document->{$setter}($testValue);
+            self::assertSame($testValue, $this->document->{$getter}());
         }
     }
 }

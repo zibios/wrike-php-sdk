@@ -37,7 +37,7 @@ class ApiException extends Exception
     /**
      * @param \Exception $e
      *
-     * @return mixed
+     * @return ApiException
      */
     public static function create(\Exception $e)
     {
@@ -70,8 +70,8 @@ class ApiException extends Exception
                 return new ResourceNotFoundException($e);
             case (ServerErrorException::STATUS_CODE . ServerErrorException::STATUS_NAME):
                 return new ServerErrorException($e);
+            default:
+                return new ApiException($e);
         }
-
-        return new ApiException($e);
     }
 }

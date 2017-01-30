@@ -11,9 +11,11 @@
 namespace Zibios\WrikePhpSdk\Tests\Integration;
 
 use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\ServerException;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use Zibios\WrikePhpSdk\Api\Client;
 use Zibios\WrikePhpSdk\Api\Factories\ApiFactory;
@@ -126,5 +128,32 @@ class ApiWrikeExceptionTest extends TestCase
             self::assertTrue($exceptionOccurred, sprintf('Request should throw exception but exception not occurred!'));
             self::assertInstanceOf($expectedExceptionClass, $e, sprintf('Request should throw %s exception but %s exception occurred!', $expectedExceptionClass, $exceptionClass));
         }
+    }
+
+    public function test_networkException()
+    {
+        $mock = new MockHandler([
+            new RequestException("Error Communicating with Server", new Request('GET', 'test')),
+        ]);
+        $handler = HandlerStack::create($mock);
+        $client = new Client(['handler' => $handler]);
+        $api = ApiFactory::createApiForBearerToken('test');
+        $api->getConfig()->setClient($client);
+        $api->getConfig()->setWrikeExceptionsMode(true);
+
+
+        $e = null;
+        $exceptionOccurred = false;
+        $exceptionClass = '';
+        try {
+            $api->getContactResource()->getAll();
+        } catch (\Exception $e) {
+            $exceptionOccurred = true;
+            $exceptionClass = get_class($e);
+        }
+
+        self::assertTrue($exceptionOccurred, sprintf('Request should throw exception but exception not occurred!'));
+        self::assertInstanceOf(ApiException::class, $e, sprintf('Request should throw %s exception but %s exception occurred!', ApiException::class, $exceptionClass));
+        self::assertInstanceOf(RequestException::class, $e->getPrevious(), sprintf('Request should previously throw %s exception but %s previously exception occurred!', RequestException::class, $exceptionClass));
     }
 }

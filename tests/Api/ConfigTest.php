@@ -12,6 +12,7 @@ namespace Zibios\WrikePhpSdk\Tests\Api;
 
 use Zibios\WrikePhpSdk\Api\Config;
 use Zibios\WrikePhpSdk\Api\ConfigInterface;
+use Zibios\WrikePhpSdk\Api\Configs\ResponseClassesConfig;
 use Zibios\WrikePhpSdk\Api\Factories\ClientFactory;
 use Zibios\WrikePhpSdk\Api\Factories\SerializerFactory;
 use Zibios\WrikePhpSdk\Enums\ResponseModeEnum;
@@ -68,5 +69,20 @@ class ConfigTest extends TestCase
         self::assertEquals(ResponseModeEnum::DOCUMENT, $config->getResponseMode());
         $config->setResponseMode(ResponseModeEnum::RESPONSE_RAW);
         self::assertSame(ResponseModeEnum::RESPONSE_RAW, $config->getResponseMode());
+    }
+
+    /**
+     *
+     */
+    public function test_getSetResponseClasses()
+    {
+        $config = new Config();
+        $defaultResponseClasses = $config->getResponseClasses();
+        self::assertInstanceOf(ResponseClassesConfig::class, $defaultResponseClasses);
+
+        $newResponseClasses = new ResponseClassesConfig();
+        $config->setResponseClasses($newResponseClasses);
+        self::assertNotSame($defaultResponseClasses, $config->getResponseClasses());
+        self::assertSame($newResponseClasses, $config->getResponseClasses());
     }
 }
