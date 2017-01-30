@@ -6,7 +6,6 @@ Wrike PHP SDK
 **First usable version around 2017-03-01**
 
 **Packagist**
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1fcef9280f3844b6bb1249fe0f21de0f)](https://www.codacy.com/app/zibios/wrike-php-sdk?utm_source=github.com&utm_medium=referral&utm_content=zibios/wrike-php-sdk&utm_campaign=badger)
 [![Packagist License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 [![Packagist Version](https://img.shields.io/packagist/v/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
@@ -36,6 +35,7 @@ Wrike PHP SDK
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/3dea766e-c7cc-4180-b611-8a3b103f334f/mini.png)](https://insight.sensiolabs.com/projects/3dea766e-c7cc-4180-b611-8a3b103f334f)
 
 **Codacy**
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1fcef9280f3844b6bb1249fe0f21de0f)](https://www.codacy.com/app/zibios/wrike-php-sdk)
 [![Codacy grade](https://img.shields.io/codacy/grade/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
 [![Codacy coverage](https://img.shields.io/codacy/coverage/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
 
