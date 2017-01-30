@@ -12,8 +12,21 @@
         syntaxCheck="false"
         bootstrap="vendor/autoload.php">
     <testsuites>
-        <testsuite name="Wrike PHP SDK">
-            <directory>./tests/</directory>
+        <testsuite name="General Test Suite for Wrike PHP SDK">
+            <directory suffix="Test.php">./tests/</directory>
         </testsuite>
     </testsuites>
+    <filter>
+        <whitelist
+                addUncoveredFilesFromWhitelist="true"
+                processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/</directory>
+            <exclude>
+                <directory>./build/</directory>
+                <directory>./docs/</directory>
+                <directory>./tests/</directory>
+                <directory>./vendor/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>
