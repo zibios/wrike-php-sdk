@@ -32,7 +32,8 @@ Wrike PHP SDK
 [![Build Status](https://travis-ci.org/zibios/wrike-php-sdk.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-sdk)
 
 **SensioLabs Insight**
-[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/3dea766e-c7cc-4180-b611-8a3b103f334f.svg)]()
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/3dea766e-c7cc-4180-b611-8a3b103f334f.svg)](https://insight.sensiolabs.com/projects/3dea766e-c7cc-4180-b611-8a3b103f334f)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/3dea766e-c7cc-4180-b611-8a3b103f334f/mini.png)](https://insight.sensiolabs.com/projects/3dea766e-c7cc-4180-b611-8a3b103f334f)
 
 **Codacy**
 [![Codacy grade](https://img.shields.io/codacy/grade/1fcef9280f3844b6bb1249fe0f21de0f.svg)](https://www.codacy.com/app/zibios/wrike-php-sdk)
