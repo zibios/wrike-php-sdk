@@ -1,10 +1,20 @@
-languages:
-  PHP: true
-exclude_paths:
-  - build/**/*
-  - docs/**/*
-  - tests/**/*
-  - vendor/**/*
+---
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+        - php
+          mass_threshold: 100
+  fixme:
+    enabled: true
+  phpmd:
+    enabled: true
 ratings:
   paths:
-    - src/**
+  - "**.php"
+exclude_paths:
+- build/**/*
+- docs/**/*
+- tests/**/*
+- vendor/**/*
