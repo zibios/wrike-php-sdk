@@ -8,7 +8,7 @@ Wrike PHP SDK
 Introduction
 ------------
 
-**This is full configured Wrike PHP SDK package for [Wrike PHP Library](https://github.com/zibios/wrike-php-library).**
+**This is full pre-configured Wrike PHP SDK package for [Wrike PHP Library](https://github.com/zibios/wrike-php-library).**
 
 For general purpose please check [full configured Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk).
 For none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library),
