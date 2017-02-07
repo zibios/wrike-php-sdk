@@ -8,26 +8,24 @@
  * file that was distributed with this source code.
  */
 
-namespace Zibios\WrikePhpSdk\Tests\Api\Factories;
+namespace Zibios\WrikePhpSdk\Tests;
 
-use GuzzleHttp\ClientInterface;
-use Zibios\WrikePhpSdk\Api\Client;
-use Zibios\WrikePhpSdk\Api\Factories\ClientFactory;
-use Zibios\WrikePhpSdk\Tests\TestCase;
+use Zibios\WrikePhpLibrary\Api;
+use Zibios\WrikePhpLibrary\ApiInterface;
+use Zibios\WrikePhpSdk\ApiFactory;
 
 /**
- * Client Factory Test
+ * Api Factory Test
  */
-class ClientFactoryTest extends TestCase
+class ApiFactoryTest extends TestCase
 {
-    public function test_createClientForBearerToken()
-    {
-        $testToken = 'testToken';
+    const TOKEN = 'properToken';
 
-        $client = ClientFactory::createClientForBearerToken($testToken);
-        self::assertInstanceOf(ClientInterface::class, $client);
-        self::assertInstanceOf(Client::class, $client);
-        self::assertSame(sprintf('Bearer %s', $testToken), $client->getConfig('headers')['Authorization']);
+    public function test_create()
+    {
+        $api = ApiFactory::create();
+        self::assertInstanceOf(Api::class, $api);
+        self::assertInstanceOf(ApiInterface::class, $api);
     }
 
     /**
@@ -50,11 +48,11 @@ class ClientFactoryTest extends TestCase
      *
      * @dataProvider tokenProvider
      */
-    public function test_ConstructorParams($token, $isValid)
+    public function test_createForBearerToken($token, $isValid)
     {
         $exceptionOccurred = false;
         try {
-            ClientFactory::createClientForBearerToken($token);
+            ApiFactory::createForBearerToken($token);
         } catch (\Exception $e) {
             $exceptionOccurred = true;
         }

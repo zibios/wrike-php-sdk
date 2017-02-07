@@ -1,7 +1,16 @@
 {
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../wrike-php-*",
+            "options": {
+                "symlink": false
+            }
+        }
+    ],
     "name": "zibios/wrike-php-sdk",
-    "description": "Wrike PHP SDK",
-    "keywords": ["wrike", "api", "sdk", "php"],
+    "description": "Wrike PHP SDK, configured Wrike PHP Library package for most user cases.",
+    "keywords": ["wrike", "wrike.com", "api", "sdk", "library", "guzzle", "client", "REST", "HTTP", "php"],
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -11,11 +20,12 @@
     ],
     "require": {
         "php": ">=5.5",
-        "guzzlehttp/guzzle": ">=4.0,<7.0",
-        "jms/serializer": "^1.4"
+        "zibios/wrike-php-library": "dev-master",
+        "zibios/wrike-php-guzzle": "dev-master",
+        "zibios/wrike-php-jmsserializer": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": ">=4.0,<6.0"
+        "phpunit/phpunit": ">=4.0,<7.0"
     },
     "autoload": {
         "psr-4": {"Zibios\\WrikePhpSdk\\": "src/"}
