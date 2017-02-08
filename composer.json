@@ -1,13 +1,4 @@
 {
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../wrike-php-*",
-            "options": {
-                "symlink": false
-            }
-        }
-    ],
     "name": "zibios/wrike-php-sdk",
     "description": "Wrike PHP SDK, configured Wrike PHP Library package for most user cases.",
     "keywords": ["wrike", "wrike.com", "api", "sdk", "library", "guzzle", "client", "REST", "HTTP", "php"],

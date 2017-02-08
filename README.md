@@ -18,7 +18,7 @@ and [response transformer plugin](https://github.com/zibios/wrike-php-jmsseriali
 Project status
 --------------
 
-**Pakcagist**:
+**Packagist**:
 [![Packagist License](https://img.shields.io/packagist/l/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 [![Packagist Version](https://img.shields.io/packagist/v/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
@@ -31,7 +31,7 @@ Project status
 [![Build Status](https://travis-ci.org/zibios/wrike-php-sdk.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-sdk)
 [![Dependency Status](https://www.versioneye.com/user/projects/588e6de35715cf00490345f5/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/588e6de35715cf00490345f5)
 
-**Generic WrikePhpLibrary**:
+**Generic [WrikePhpLibrary](https://github.com/zibios/wrike-php-library)**:
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-library/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-library/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/28d43ffe-fa9a-4afa-893e-fc9b2e080d09/mini.png)](https://insight.sensiolabs.com/projects/28d43ffe-fa9a-4afa-893e-fc9b2e080d09)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9b3b1cf6321040fa910c0c1c335b5ba1)](https://www.codacy.com/app/zibios/wrike-php-library)
@@ -39,7 +39,7 @@ Project status
 [![Build Status](https://travis-ci.org/zibios/wrike-php-library.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-library)
 [![Dependency Status](https://www.versioneye.com/user/projects/5899f1acc71294004c4c3322/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5899f1acc71294004c4c3322)
 
-**Plugin WrikePhpJmsserializer**:
+**Plugin [WrikePhpJmsserializer](https://github.com/zibios/wrike-php-jmsserializer)**:
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-jmsserializer/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691/mini.png)](https://insight.sensiolabs.com/projects/c5257b55-3b63-4739-9e91-2f231d189691)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d37c4ffd44647dba3f4e82dae223481)](https://www.codacy.com/app/zibios/wrike-php-jmsserializer)
@@ -47,7 +47,7 @@ Project status
 [![Build Status](https://travis-ci.org/zibios/wrike-php-jmsserializer.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-jmsserializer)
 [![Dependency Status](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5899f1afc71294003d853b1f)
 
-**Plugin WrikePhpGuzzle**:
+**Plugin [WrikePhpGuzzle](https://github.com/zibios/wrike-php-guzzle)**:
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-guzzle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-guzzle/?branch=master)
 [![SensioLabsInsight](https://insight.sensiolabs.com/projects/8a8a49af-f1a6-40c9-97c6-dda145e8a75c/mini.png)](https://insight.sensiolabs.com/projects/8a8a49af-f1a6-40c9-97c6-dda145e8a75c)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1b24d23368ad4971a0fbf47ed0457e86)](https://www.codacy.com/app/zibios/wrike-php-guzzle)

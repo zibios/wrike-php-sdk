@@ -36,8 +36,8 @@ class ApiFactoryTest extends TestCase
         return [
             // [token, isValid]
             ['properToken', true],
+            ['', true],
             [new \stdClass(), false],
-            ['', false],
             [null, false],
         ];
     }
