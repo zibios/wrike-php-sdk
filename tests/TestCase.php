@@ -15,5 +15,13 @@ namespace Zibios\WrikePhpSdk\Tests;
  */
 abstract class TestCase extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var string
+     */
+    protected $sourceClass;
 
+    /**
+     * @var mixed
+     */
+    protected $object;
 }
