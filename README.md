@@ -53,7 +53,7 @@ Project status
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1b24d23368ad4971a0fbf47ed0457e86)](https://www.codacy.com/app/zibios/wrike-php-guzzle)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-php-guzzle/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-php-guzzle/coverage)
 [![Build Status](https://travis-ci.org/zibios/wrike-php-guzzle.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-guzzle)
-[![Dependency Status](https://www.versioneye.com/user/projects/5899f1dec71294004db15114/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/5899f1dec71294004db15114)
+[![Libraries.io](https://img.shields.io/librariesio/github/zibios/wrike-php-sdk.svg)](https://libraries.io/packagist/zibios%2Fwrike-php-sdk)
 
 [All badges](docs/Badges.md)
 
