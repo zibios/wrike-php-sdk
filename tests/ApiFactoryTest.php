@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpSdk package.
+
+/*
+ * This file is part of the zibios/wrike-php-sdk package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -15,7 +16,7 @@ use Zibios\WrikePhpLibrary\ApiInterface;
 use Zibios\WrikePhpSdk\ApiFactory;
 
 /**
- * Api Factory Test
+ * Api Factory Test.
  */
 class ApiFactoryTest extends TestCase
 {
@@ -44,7 +45,7 @@ class ApiFactoryTest extends TestCase
 
     /**
      * @param mixed $token
-     * @param boolean $isValid
+     * @param bool  $isValid
      *
      * @dataProvider tokenProvider
      */

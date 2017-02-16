@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpSdk package.
+
+/*
+ * This file is part of the zibios/wrike-php-sdk package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -30,7 +31,7 @@ use Zibios\WrikePhpLibrary\Transformer\Response\RawResponseTransformer;
 use Zibios\WrikePhpSdk\Tests\TestCase;
 
 /**
- * Api Exception Wrike Transformer Test
+ * Api Exception Wrike Transformer Test.
  */
 class ApiExceptionWrikeTransformerTest extends TestCase
 {
@@ -65,7 +66,7 @@ class ApiExceptionWrikeTransformerTest extends TestCase
     }
 
     /**
-     * @param int $responseCode
+     * @param int    $responseCode
      * @param string $errorName
      * @param string $expectedExceptionClass
      *

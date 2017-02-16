@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpSdk package.
+
+/*
+ * This file is part of the zibios/wrike-php-sdk package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -11,18 +12,19 @@
 namespace Zibios\WrikePhpSdk;
 
 use Zibios\WrikePhpGuzzle\ClientFactory;
-use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
 use Zibios\WrikePhpJmsserializer\SerializerFactory;
+use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
 use Zibios\WrikePhpLibrary\Api;
 
 /**
- * Api Factory
+ * Api Factory.
  */
 class ApiFactory
 {
     /**
-     * @return Api
      * @throws \InvalidArgumentException
+     *
+     * @return Api
      */
     public static function create()
     {
@@ -36,8 +38,9 @@ class ApiFactory
     /**
      * @param string $bearerToken
      *
-     * @return Api
      * @throws \InvalidArgumentException
+     *
+     * @return Api
      */
     public static function createForBearerToken($bearerToken)
     {

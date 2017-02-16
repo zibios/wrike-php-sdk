@@ -1,6 +1,7 @@
 <?php
-/**
- * This file is part of the WrikePhpSdk package.
+
+/*
+ * This file is part of the zibios/wrike-php-sdk package.
  *
  * (c) Zbigniew Ślązak
  *
@@ -11,7 +12,7 @@
 namespace Zibios\WrikePhpSdk\Tests;
 
 /**
- * Test Case
+ * Test Case.
  */
 abstract class TestCase extends \PHPUnit_Framework_TestCase
 {
