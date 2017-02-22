@@ -12,9 +12,8 @@
 namespace Zibios\WrikePhpSdk;
 
 use Zibios\WrikePhpGuzzle\ClientFactory;
-use Zibios\WrikePhpJmsserializer\SerializerFactory;
-use Zibios\WrikePhpJmsserializer\Transformer\Response\ResponseModelTransformer;
 use Zibios\WrikePhpLibrary\Api;
+use Zibios\WrikePhpLibrary\Transformer\Response\ArrayBodyTransformer;
 
 /**
  * Api Factory.
@@ -29,8 +28,7 @@ class ApiFactory
     public static function create()
     {
         $client = ClientFactory::create();
-        $serializer = SerializerFactory::createSerializer();
-        $responseTransformer = new ResponseModelTransformer($serializer);
+        $responseTransformer = new ArrayBodyTransformer();
 
         return new Api($client, $responseTransformer);
     }
