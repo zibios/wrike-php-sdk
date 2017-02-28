@@ -15,7 +15,7 @@ use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use Zibios\WrikePhpGuzzle\Client\GuzzleClient;
-use Zibios\WrikePhpGuzzle\Transformer\Exception\Api\WrikeTransformer;
+use Zibios\WrikePhpGuzzle\Transformer\ApiException\WrikeTransformer;
 use Zibios\WrikePhpLibrary\Api;
 use Zibios\WrikePhpLibrary\Exception\Api\AccessForbiddenException;
 use Zibios\WrikePhpLibrary\Exception\Api\ApiException;
@@ -84,8 +84,8 @@ class ApiExceptionWrikeTransformerTest extends TestCase
             ),
         ]);
         $handler = HandlerStack::create($responseMock);
-        $client = new GuzzleClient($apiExceptionTransformer, ['handler' => $handler]);
-        $api = new Api($client, $responseTransformer);
+        $client = new GuzzleClient(['handler' => $handler]);
+        $api = new Api($client, $responseTransformer, $apiExceptionTransformer, 'testToken');
 
         $e = null;
         $exceptionOccurred = false;
@@ -98,11 +98,25 @@ class ApiExceptionWrikeTransformerTest extends TestCase
         }
 
         if ($expectedExceptionClass === '') {
-            self::assertFalse($exceptionOccurred, sprintf('Request should not throw exception but "%s" exception occurred!', $exceptionClass));
+            self::assertFalse(
+                $exceptionOccurred,
+                sprintf('Request should not throw exception but "%s" exception occurred!', $exceptionClass)
+            );
         }
         if ($expectedExceptionClass !== '') {
-            self::assertTrue($exceptionOccurred, sprintf('Request should throw exception but exception not occurred!'));
-            self::assertInstanceOf($expectedExceptionClass, $e, sprintf('Request should throw %s exception but %s exception occurred!', $expectedExceptionClass, $exceptionClass));
+            self::assertTrue(
+                $exceptionOccurred,
+                sprintf('Request should throw exception but exception not occurred!')
+            );
+            self::assertInstanceOf(
+                $expectedExceptionClass,
+                $e,
+                sprintf(
+                    'Request should throw %s exception but %s exception occurred!',
+                    $expectedExceptionClass,
+                    $exceptionClass
+                )
+            );
         }
     }
 }
