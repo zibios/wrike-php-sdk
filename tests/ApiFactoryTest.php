@@ -51,7 +51,7 @@ class ApiFactoryTest extends TestCase
      *
      * @dataProvider tokenProvider
      */
-    public function test_createForBearerToken($token, $isValid)
+    public function test_createWithAccessToken($token, $isValid)
     {
         $exceptionOccurred = false;
         try {

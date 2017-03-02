@@ -22,18 +22,18 @@ use Zibios\WrikePhpLibrary\Transformer\Response\Psr\ArrayBodyTransformer;
 class ApiFactory
 {
     /**
-     * @param string|null $bearerToken
+     * @param string|null $accessToken
      *
      * @throws \InvalidArgumentException
      *
      * @return Api
      */
-    public static function create($bearerToken = '')
+    public static function create($accessToken = '')
     {
         $client = ClientFactory::create();
         $responseTransformer = new ArrayBodyTransformer();
         $apiExceptionTransformer = new GuzzleTransformer();
 
-        return new Api($client, $responseTransformer, $apiExceptionTransformer, $bearerToken);
+        return new Api($client, $responseTransformer, $apiExceptionTransformer, $accessToken);
     }
 }
