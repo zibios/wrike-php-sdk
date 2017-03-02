@@ -15,7 +15,7 @@ use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Psr7\Response;
 use Zibios\WrikePhpGuzzle\Client\GuzzleClient;
-use Zibios\WrikePhpGuzzle\Transformer\ApiException\WrikeTransformer;
+use Zibios\WrikePhpGuzzle\Transformer\ApiException\GuzzleTransformer;
 use Zibios\WrikePhpLibrary\Api;
 use Zibios\WrikePhpLibrary\Exception\Api\AccessForbiddenException;
 use Zibios\WrikePhpLibrary\Exception\Api\ApiException;
@@ -74,7 +74,7 @@ class ApiExceptionWrikeTransformerTest extends TestCase
      */
     public function test_wrikeExceptions($responseCode, $errorName, $expectedExceptionClass)
     {
-        $apiExceptionTransformer = new WrikeTransformer();
+        $apiExceptionTransformer = new GuzzleTransformer();
         $responseTransformer = new RawResponseTransformer();
         $responseMock = new MockHandler([
             new Response(

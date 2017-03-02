@@ -1,19 +1,14 @@
 Wrike PHP SDK
 ================================
 
-**Proof of Concept - NOT YET USABLE!!!**
-
-**First usable version around 2017-03-01**
+**Alpha version, first usable version around 2017-03-06**
 
 Introduction
 ------------
 
 **This is full pre-configured Wrike PHP SDK package for [Wrike PHP Library](https://github.com/zibios/wrike-php-library).**
 
-For general purpose please check [full configured Wrike PHP SDK](https://github.com/zibios/wrike-php-sdk).
-For none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library),
-[HTTP Client plugin](https://github.com/zibios/wrike-php-guzzle),
-and [response transformer plugin](https://github.com/zibios/wrike-php-jmsserializer).
+For more info or none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library).
 
 Project status
 --------------

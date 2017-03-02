@@ -12,10 +12,8 @@
 namespace Zibios\WrikePhpSdk;
 
 use Zibios\WrikePhpGuzzle\ClientFactory;
-use Zibios\WrikePhpGuzzle\Transformer\ApiException\WrikeTransformer;
+use Zibios\WrikePhpGuzzle\Transformer\ApiException\GuzzleTransformer;
 use Zibios\WrikePhpLibrary\Api;
-use Zibios\WrikePhpLibrary\ImmutableApi;
-use Zibios\WrikePhpLibrary\Traits\AssertIsValidBearerToken;
 use Zibios\WrikePhpLibrary\Transformer\Response\Psr\ArrayBodyTransformer;
 
 /**
@@ -23,8 +21,6 @@ use Zibios\WrikePhpLibrary\Transformer\Response\Psr\ArrayBodyTransformer;
  */
 class ApiFactory
 {
-    use AssertIsValidBearerToken;
-
     /**
      * @param string|null $bearerToken
      *
@@ -36,24 +32,8 @@ class ApiFactory
     {
         $client = ClientFactory::create();
         $responseTransformer = new ArrayBodyTransformer();
-        $apiExceptionTransformer = new WrikeTransformer();
+        $apiExceptionTransformer = new GuzzleTransformer();
 
         return new Api($client, $responseTransformer, $apiExceptionTransformer, $bearerToken);
-    }
-
-    /**
-     * @param string|null $bearerToken
-     *
-     * @throws \InvalidArgumentException
-     *
-     * @return ImmutableApi
-     */
-    public static function createImmutable($bearerToken = '')
-    {
-        $client = ClientFactory::create();
-        $responseTransformer = new ArrayBodyTransformer();
-        $apiExceptionTransformer = new WrikeTransformer();
-
-        return new ImmutableApi($client, $responseTransformer, $apiExceptionTransformer, $bearerToken);
     }
 }

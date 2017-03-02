@@ -13,7 +13,7 @@ namespace Zibios\WrikePhpSdk\Tests;
 
 use Zibios\WrikePhpLibrary\Api;
 use Zibios\WrikePhpLibrary\ApiInterface;
-use Zibios\WrikePhpLibrary\ImmutableApi;
+use Zibios\WrikePhpLibrary\ImmutableApiInterface;
 use Zibios\WrikePhpSdk\ApiFactory;
 
 /**
@@ -28,13 +28,7 @@ class ApiFactoryTest extends TestCase
         $api = ApiFactory::create();
         self::assertInstanceOf(Api::class, $api);
         self::assertInstanceOf(ApiInterface::class, $api);
-    }
-
-    public function test_createImmutable()
-    {
-        $api = ApiFactory::createImmutable();
-        self::assertInstanceOf(ImmutableApi::class, $api);
-        self::assertInstanceOf(ApiInterface::class, $api);
+        self::assertInstanceOf(ImmutableApiInterface::class, $api);
     }
 
     /**
