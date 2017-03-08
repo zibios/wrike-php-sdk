@@ -1,14 +1,22 @@
 Wrike PHP SDK
 ================================
 
-**Alpha version, first usable version around 2017-03-06**
+**Current version: 0.1.0, version 1.0.0 around 2017-04-01**
 
 Introduction
 ------------
 
 **This is full pre-configured Wrike PHP SDK package for [Wrike PHP Library](https://github.com/zibios/wrike-php-library).**
 
+Handle
+[Wrike PHP Library](https://github.com/zibios/wrike-php-library),
+[HTTP Client plugin](https://github.com/zibios/wrike-php-guzzle) and
+[response transformer plugin](https://github.com/zibios/wrike-php-jmsserializer)
+in one package.
+
+
 For more info or none standard purposes please check [generic Wrike PHP Library](https://github.com/zibios/wrike-php-library).
+For Symfony2 / Symfony3 please check full configured [Wrike bundle](https://github.com/zibios/wrike-bundle).
 
 Project status
 --------------
@@ -47,6 +55,19 @@ Run PHPUnit tests:
 ./vendor/bin/phpunit
 ``` 
 
+Usage
+-----
+```php
+/**
+ * Basic usage
+ */
+$api = ApiFactory::create(<PermanentToken>);
+$allContacts = $api->getContactResource()->getAll();
+...
+```
+ 
+For more info please check full documentation on [Generic Wrike PHP Library](https://github.com/zibios/wrike-php-library)
+
 
 Reference
 ---------
@@ -57,6 +78,7 @@ Reference
 
 [HTTP Client plugin](https://github.com/zibios/wrike-php-guzzle) for Wrike PHP Library
 
+[Symfony bundle](https://github.com/zibios/wrike-bundle)
 
 Official [Wrike API Documentation](https://developers.wrike.com/documentation/api/overview)
 
