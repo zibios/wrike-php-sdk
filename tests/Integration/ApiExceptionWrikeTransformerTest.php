@@ -90,6 +90,7 @@ class ApiExceptionWrikeTransformerTest extends TestCase
         $e = null;
         $exceptionOccurred = false;
         $exceptionClass = '';
+
         try {
             $api->getContactResource()->getAll();
         } catch (\Exception $e) {
@@ -97,13 +98,13 @@ class ApiExceptionWrikeTransformerTest extends TestCase
             $exceptionClass = get_class($e);
         }
 
-        if ($expectedExceptionClass === '') {
+        if ('' === $expectedExceptionClass) {
             self::assertFalse(
                 $exceptionOccurred,
                 sprintf('Request should not throw exception but "%s" exception occurred!', $exceptionClass)
             );
         }
-        if ($expectedExceptionClass !== '') {
+        if ('' !== $expectedExceptionClass) {
             self::assertTrue(
                 $exceptionOccurred,
                 sprintf('Request should throw exception but exception not occurred!')
