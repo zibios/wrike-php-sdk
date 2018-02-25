@@ -2,7 +2,7 @@ Collection of all badges for package
 ====================================
 
 **Packagist**
-[![Packagist License](https://img.shields.io/packagist/l/doctrine/orm.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
+[![Packagist License](https://img.shields.io/packagist/l/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 [![Packagist Version](https://img.shields.io/packagist/v/zibios/wrike-php-sdk.svg)](https://packagist.org/packages/zibios/wrike-php-sdk)
 
@@ -36,11 +36,11 @@ Collection of all badges for package
 [![Code Climate](https://codeclimate.com/github/zibios/wrike-php-sdk/badges/gpa.svg)](https://codeclimate.com/github/zibios/wrike-php-sdk)
 [![Test Coverage](https://codeclimate.com/github/zibios/wrike-php-sdk/badges/coverage.svg)](https://codeclimate.com/github/zibios/wrike-php-sdk/coverage)
 
-**HHVM**
-[![HHVM Status](http://hhvm.h4cc.de/badge/zibios/wrike-php-sdk.svg)](http://hhvm.h4cc.de/package/zibios/wrike-php-sdk)
-
 **Coveralls**
 [![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-php-sdk/badge.svg)](https://coveralls.io/github/zibios/wrike-php-sdk)
 
 **StyleCI**
 [![StyleCI](https://styleci.io/repos/80352730/shield?branch=master)](https://styleci.io/repos/80352730)
+
+**VersionEye**
+[![VersionEye](http://php-eye.com/badge/zibios/wrike-php-sdk/tested.svg)](http://php-eye.com/package/zibios/wrike-php-sdk)

@@ -1,8 +1,6 @@
 Wrike PHP SDK
 ================================
 
-**Current version: 0.1.0, version 1.0.0 around 2017-05-01**
-
 Introduction
 ------------
 
