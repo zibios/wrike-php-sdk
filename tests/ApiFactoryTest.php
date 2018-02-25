@@ -54,16 +54,17 @@ class ApiFactoryTest extends TestCase
     public function test_createWithAccessToken($token, $isValid)
     {
         $exceptionOccurred = false;
+
         try {
             ApiFactory::create($token);
         } catch (\Exception $e) {
             $exceptionOccurred = true;
         }
 
-        if ($isValid === false) {
+        if (false === $isValid) {
             self::assertTrue($exceptionOccurred);
         }
-        if ($isValid === true) {
+        if (true === $isValid) {
             self::assertFalse($exceptionOccurred);
         }
     }
