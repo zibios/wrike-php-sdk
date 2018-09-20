@@ -39,7 +39,7 @@ Project status
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1fcef9280f3844b6bb1249fe0f21de0f)](https://www.codacy.com/app/zibios/wrike-php-sdk)
 [![Code Climate Maintainability](https://api.codeclimate.com/v1/badges/7ade1663f7d5db2ca614/maintainability)](https://codeclimate.com/github/zibios/wrike-php-sdk/maintainability)
 
-**Branch 'master'**
+**Branch 'v1.x'**
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/quality-score.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=v1.x)
 [![Scrutinizer Build Status](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/build.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/build-status/v1.x)
