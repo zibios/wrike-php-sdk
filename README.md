@@ -41,12 +41,12 @@ Project status
 
 **Branch 'master'**
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=master)
-[![Scrutinizer Build Status](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/build.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/build-status/master)
-[![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=master)
-[![Travis Build Status](https://travis-ci.org/zibios/wrike-php-sdk.svg?branch=master)](https://travis-ci.org/zibios/wrike-php-sdk)
-[![StyleCI](https://styleci.io/repos/80352730/shield?branch=master)](https://styleci.io/repos/80352730)
-[![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-php-sdk/badge.svg?branch=master)](https://coveralls.io/github/zibios/wrike-php-sdk?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/quality-score.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=v1.x)
+[![Scrutinizer Build Status](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/build.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/build-status/v1.x)
+[![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/badges/coverage.png?b=v1.x)](https://scrutinizer-ci.com/g/zibios/wrike-php-sdk/?branch=v1.x)
+[![Travis Build Status](https://travis-ci.org/zibios/wrike-php-sdk.svg?branch=v1.x)](https://travis-ci.org/zibios/wrike-php-sdk)
+[![StyleCI](https://styleci.io/repos/80352730/shield?branch=v1.x)](https://styleci.io/repos/80352730)
+[![Coverage Status](https://coveralls.io/repos/github/zibios/wrike-php-sdk/badge.svg?branch=v1.x)](https://coveralls.io/github/zibios/wrike-php-sdk?branch=v1.x)
 
 Installation
 ------------
