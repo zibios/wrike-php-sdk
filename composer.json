@@ -10,10 +10,10 @@
         }
     ],
     "require": {
-        "php": ">=5.5,<7.2",
-        "zibios/wrike-php-library": "^1.0",
-        "zibios/wrike-php-guzzle": "^1.0",
-        "zibios/wrike-php-jmsserializer": "^1.0"
+        "php": ">=5.5",
+        "zack-carlson/wrike-php-library": "dev-master",
+        "zack-carlson/wrike-php-guzzle": "dev-master",
+        "zack-carlson/wrike-php-jmsserializer": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.0,<6.0"
